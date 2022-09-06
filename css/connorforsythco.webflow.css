@@ -1,3 +1,8 @@
+.working-at:hover {
+    opacity: .5;
+    transition: opacity .4s cubic-bezier(.075,.82,.165,1);
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
