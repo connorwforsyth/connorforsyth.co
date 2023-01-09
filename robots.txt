@@ -1,0 +1,5 @@
+User-agent: Googlebot-Image
+Disallow: /images/civic-icon.png
+Disallow: /images/ServdesCon.png
+Disallow: /images/VAH-MOCKUP.png
+Disallow: /images/TEDxHero.png
