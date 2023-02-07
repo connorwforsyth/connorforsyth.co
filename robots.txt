@@ -1,6 +1,7 @@
 User-agent: Googlebot-Image
 #Civic Icons
 Disallow: /images/Civic-Icon-p-500.png
+Disallow: /images/civic-icon-p-500.png
 Disallow: /images/Civic-Icon.png
 Disallow: /images/civic-icon.png
 Disallow: /images/logo-svg.svg
