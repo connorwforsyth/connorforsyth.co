@@ -2,12 +2,66 @@
 <html>
 <head>
 </head>
+<style>
+    .designit-btn {
+        -webkit-text-size-adjust: 100%;
+        --vh: 9.82px;
+        font-family: Alphabeta,Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-weight: 400;
+        font-feature-settings: "calt";
+        font-variant-ligatures: contextual;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.3;
+        font-size: 20px;
+        border: 0 solid;
+        box-sizing: border-box;
+        background-color: transparent;
+        color: inherit;
+        touch-action: manipulation;
+        margin-bottom: 20px;
+        background-position: 0 100%,0 100%;
+        background-repeat: no-repeat;
+        background-size: 0 1px,100% 1px;
+        padding-bottom: .1em;
+        text-decoration: none!important;
+        background-image: linear-gradient(var(--color,currentColor),var(--color,currentColor)),linear-gradient(#ccc,#ccc);
+        margin-right: 56px;
+        outline: none!important;
+        --color: #db3232;
+    };
+</style>
 <body>
     
-</body>
+<div type="main">
+
+<h2>Option with just a button</h2>
+
+<p>Click the button below to open the modal.</p>
+<!-- Noscript content for added SEO -->
+<noscript><a href="https://www.eventbrite.com.au/e/sustainability-by-design-from-purpose-to-progress-designit-tickets-639004418417" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+<!-- You can customise this button any way you like -->
+<button class="designit-btn"id="eventbrite-widget-modal-trigger-639004418417" type="button">Buy Tickets</button>
+
+<h2>Option within the page.</h2>
 <div id="eventbrite-widget-container-639004418417"></div>
 
+</div>
 <script src="https://www.eventbrite.com.au/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '639004418417',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-639004418417',
+        onOrderComplete: exampleCallback
+    });
+</script>
+
 
 <script type="text/javascript">
     var exampleCallback = function() {
@@ -25,4 +79,7 @@
         onOrderComplete: exampleCallback  // Method called when an order has successfully completed
     });
 </script>
+
+
+</body>
 </html>
